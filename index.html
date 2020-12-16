@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Moniruzzaman Saikat">
+    <meta name="description" content="It is demo purpose template for practice web desgin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Google</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+       <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Gmail</a>
+                </li>
+                <li>
+                    <a href="#">Images</a>
+                </li>
+                <li>
+                    <img src="img/icon.png" class="toggle">
+                </li>
+                <li>
+                    <a href="https://accounts.google.com/login" class="profile-button">Sign in<Inp></Inp></a>
+                </li>
+            </ul>
+       </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="search-box">
+                <form>
+                    <div class="input-box">
+                        <i class="fa fa-search"></i>
+                        <input type="search" title="Search" autofocus>
+                        <img title="Search by  voice" src="img/mike.png" alt="">
+                    </div>
+                    <div class="buttons">
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                        
+                    </div>
+                </form>
+                <p>Google offered in: <a href="#">বাংলা</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="top">
+            <p>Bangladesh</p>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search workds</a>
+            </div>
+            <div class="right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Setting</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google products -->
+    <div class="google-products">
+        <div class="product">
+            <div class="img-box">
+                <img src="img/google-contacts.png" alt="">
+            </div>
+            <h3>Account</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/google-earth.png" alt="">
+            </div>
+            <h3>Earth</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/google-photos.png" alt="">
+            </div>
+            <h3>Photos</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/google-yellow.png" alt="">
+            </div>
+            <h3>Slides</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/google.png" alt="">
+            </div>
+            <h3>News</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/hangouts-meet.png" alt="">
+            </div>
+            <h3>Duo</h3>
+        </div>
+
+
+        <div class="product">
+            <div class="img-box">
+                <img src="img/jamboard.png" alt="">
+            </div>
+            <h3>Jamboard</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/playstore.png" alt="">
+            </div>
+            <h3>Playstore</h3>
+        </div>
+        <div class="product">
+            <div class="img-box">
+                <img src="img/sheets.png" alt="">
+            </div>
+            <h3>Sheets</h3>
+        </div>
+
+        <div class="product">
+            <div class="img-box">
+                <img src="img/translate.png" alt="">
+            </div>
+            <h3>Translate</h3>
+        </div> 
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.toggle')
+        const content = document.querySelector('.google-products')
+
+        toggle.addEventListener('click', () => {
+            content.classList.toggle('toggle')
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0 26px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li img{
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: -7px;
+}
+ 
+a.profile-button {
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    padding: 7px 12px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    cursor: default; 
+    line-height: 28px;
+}
+
+/* Main part */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+}
+
+main .container { 
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 13px 10px;
+    outline: none;
+    border-radius: 30px;
+    margin: 20px 0;
+    padding-left: 40px; 
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #ececec;
+}
+
+input:hover, input:focus {
+    box-shadow: 0 0 4px 2px #f0f0f0;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box img {
+    width: 17px;
+    position: absolute;
+    top: 31px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.input-box .fa  {
+    width: 17px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+}
+
+.buttons button {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+.buttons button:hover {
+    color: #000;
+    border-color: rgb(182, 182, 182);
+}
+
+.buttons button:focus {
+    border:1px solid #4d90fe;
+}
+
+main p {
+    text-align: center;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p  a  {
+    color: #1A0DAB;
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6F6F6F;
+}
+
+footer .top, footer .bottom {
+    background: #f2f2f2;
+    width: 100%;
+    padding: 10px 30px;
+    border-top: 1px solid #E4E4E4;
+}
+
+footer .top p {
+    font-size: 15px;
+}
+ 
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left a, .right a {
+    color: #6F6F6F;
+    font-size: 14px;
+}
+
+.google-products {
+    position: absolute;
+    background-color: #fff;
+    top: 53px;
+    right: 38px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px 10px;
+    border: 1px solid #f1f1f1;
+    padding: 10px 20px;
+    z-index: 1000;
+    border-radius: 10px; 
+    box-shadow: 1px 0 11px 5px #d8d8d8;
+    transition: 0.1s;
+    display: none;
+    max-height: 380px;
+    overflow-y: scroll;
+}
+
+.google-products img {
+    width: 60px; 
+    height: 60px; 
+}
+
+.google-products .product {  
+    padding: 10px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    vertical-align: top;
+    width: 84px;
+    cursor: pointer;
+}
+
+.google-products .product:hover {
+    background: #dedede;
+    border-radius: 10px;
+}
+
+.google-products .product h3 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.toggle {
+    display: grid;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+    main .container {
+        width: 100%;
+        margin: 0 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: grid;
+        text-align: center;
+        grid-gap: 15px; 
+    } 
+    .bottom .right {  
+        grid-row: 1; 
+    }
+}
+
